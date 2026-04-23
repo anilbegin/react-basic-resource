@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="header-bar">
+    <header class="header-bar" id="top">
       <div class="container d-flex flex-column flex-md-row align-items-center p-3">
         <h4 class="my-0 mr-md-auto font-weight-normal">
           <a href="index.html" class="text-white">
@@ -49,40 +49,35 @@
           </div>
           
           <!-- RIGHT FORM -->
+           
           <div class="hero-card">
             <h4>Create your account</h4>
             
             <form>
               <div class="form-group">
-                <label for="username-register" class="text-muted mb-1">
-                  <small>Username</small>
-                </label>
-                <input class="form-control" type="text" placeholder="Pick a username" />
-                <div class="alert alert-danger small liveValidateMessage liveValidateMessage--visible">
-                  Invalid Username
+                <input class="form-control" type="text" placeholder="Username" />
+                <div class="invalid-feedback">
+                  Username must contain atleast 4 characters
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="email-register" class="text-muted mb-1">
-                  <small>Email</small>
-                </label>
-                <input class="form-control" type="email" placeholder="you@example.com" />
-                <div class="alert alert-danger small liveValidateMessage liveValidateMessage--visible">
-                  Invalid Email Address
+                <input class="form-control is-invalid" type="email" placeholder="Email" />
+                <div class="invalid-feedback">
+                  Please enter a valid email address
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="password-register" class="text-muted mb-1">
-                  <small>Password</small>
-                </label>
-                <input class="form-control" type="password" placeholder="Create a password" />
+                <input class="form-control is-invalid" type="password" placeholder="Password" />
                 <!-- only to be included when there is an Error
                 <div class="alert alert-danger small liveValidateMessage liveValidateMessage--visible">
                   Invalid Password
                 </div>
                 -->
+                <div class="invalid-feedback">
+                  Password must contain at least 6 characters
+                </div>
               </div>
 
               <button class="btn btn-success btn-block btn-lg mt-3">
@@ -95,9 +90,69 @@
       </div>
   
     <!-- End of New Hero Section -->
-    <footer class="border-top text-center small text-muted py-3">
-      <p><a href="index.html" class="mx-1">Home</a> | <a class="mx-1" href="about-us.html">About Us</a> | <a class="mx-1" href="terms.html">Terms</a></p>
-      <p class="m-0">Copyright &copy; 2026 <a href="/" class="text-muted">WriteSpace</a>. All rights reserved.</p>
-    </footer>
+     <!-- SOCIAL PROOF -->
+<section class="py-5 text-center bg-white">
+  <div class="container">
+    <p class="text-muted mb-4">Trusted by writers worldwide</p>
+
+    
+    <div class="d-flex justify-content-center flex-wrap">
+      <span class="text-muted mx-3">Medium</span>
+      <span class="text-muted mx-3">Substack</span>
+      <span class="text-muted mx-3">Dev.to</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="py-5 features-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      
+      <h2 class="font-weight-bold">Why WriteSpace?</h2>
+      <p class="text-muted">Built for clarity, not noise.</p>
+    </div>
+
+    
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="modern-card h-100">
+          <h5>Distraction Free</h5>
+          <p>Focus on writing without clutter.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="modern-card h-100">
+          <h5>Real Audience</h5>
+          <p>Reach readers who care about depth.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="modern-card h-100">
+          <h5>Clean Design</h5>
+          <p>Minimal UI that puts content first.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section text-center">
+  <div class="container">
+    <h2 class="font-weight-bold mb-3">Start writing today</h2>
+    <p class="mb-4">Join a platform that values thoughtful content.</p>
+  <!--  <button class="btn btn-success btn-lg">Create Account</button> -->
+    <a href="#top" class="btn btn-success btn-lg">Create Account</a>
+</div>
+</section>
+<footer class="border-top text-center small text-muted py-3">
+  <p><a href="index.html" class="mx-1">Home</a> | <a class="mx-1" href="about-us.html">About Us</a> | <a class="mx-1" href="terms.html">Terms</a></p>
+  <p class="m-0">Copyright &copy; 2026 <a href="/" class="text-muted">WriteSpace</a>. All rights reserved.</p>
+</footer>
   </body>
 </html>
