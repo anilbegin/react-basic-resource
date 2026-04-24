@@ -18,24 +18,24 @@
           </a>
         </h4>
         <form class="header-login">
-          <input name="username"
-            class="form-control"
+          <input name="username" class="form-control is-invalid"
             type="text"
             placeholder="Username"
             autocomplete="off"
+            required
           />
-
+         
           <input name="password"
             class="form-control"
             type="password"
             placeholder="Password"
           />
-
+          
           <button class="btn btn-success">Sign In</button>
         </form>
       </div>
     </header>
-    <!-- new hero Section -->
+    <!-- hero Section -->
     <div class="hero">
         <div class="container hero-inner">
           
@@ -70,7 +70,7 @@
 
               <div class="form-group">
                 <input class="form-control is-invalid" type="password" placeholder="Password" />
-                <!-- only to be included when there is an Error
+                <!-- only to be included when there is an Error (might replace it with class "invalid-feedback")
                 <div class="alert alert-danger small liveValidateMessage liveValidateMessage--visible">
                   Invalid Password
                 </div>

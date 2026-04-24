@@ -385,7 +385,7 @@ transform: translateY(0);
 }
 
 /* Chat Bubbles Styling */
-/* 💬 CHAT LOG CONTAINER */
+/* CHAT LOG CONTAINER */
 .chat-log {
   padding: 0.8rem;
   display: flex;
@@ -409,7 +409,7 @@ transform: translateY(0);
   position: relative;
 }
 
-/* 👤 OTHER USERS (Left Side) */
+/* OTHER USERS (Left Side) */
 .chat-other {
   display: flex;
   align-self: flex-start;
@@ -611,21 +611,21 @@ transform: translateY(0);
 }
 
 /* Extra Additions*/
-/* 🌐 Global Improvements */
+/*Global Improvements */
 body {
   font-family: "Public Sans", sans-serif;
   background-color: #f8fafc;
   color: #1a1a1a;
 }
 
-/* ✨ Header */
+/* Header */
 
 .header-bar a {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-/* ✨ Inputs (modern feel) */
+/* Inputs (modern feel) */
 .form-control {
   border-radius: 10px;
   border: 1px solid #ababad;
@@ -659,7 +659,7 @@ body {
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
-/* ✨ Buttons */
+/* Buttons */
 .btn {
   border-radius: 10px;
   font-weight: 600;
@@ -678,7 +678,7 @@ body {
   
 }
 
-/* ✨ Typography */
+/* Typography */
 .display-3 {
   font-weight: 700;
   letter-spacing: -1px;
@@ -699,7 +699,7 @@ form {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* ✨ Labels */
+/* Labels */
 label small {
   font-weight: 500;
   color: #475569;
@@ -721,14 +721,14 @@ footer a:hover {
   color: #0f172a;
 }
 
-/* ✨ Links */
+/* Links */
 a {
   transition: color 0.2s ease;
 }
 
 /* ✨ Subtle spacing improvement */
 .container {
-  max-width: 1100px;
+  max-width: 1140px;
 }
 .modern-card {
   height: 100%;
@@ -755,9 +755,9 @@ a {
 }
 
 /*CSS for the new Hero section*/
-/* 🌟 HERO SECTION */
+/* HERO SECTION */
 .hero {
-  padding: 100px 0;
+  padding: 64px 0;
   background: radial-gradient(circle at 20% 30%, #e9eef4, #bdd1e0 60%); 
   /*background: radial-gradient(circle at 20% 30%, #e9eef4, #e4e9ed 60%); First try */
 }
@@ -805,19 +805,23 @@ a {
   flex: 1;
   max-width: 430px;
   background: #ffffff;
-  padding: 20px;
+  padding: 15px 18px;
   border-radius: 18px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
 
 .hero-card:hover {
-  transform: translateY(-1px);
+  transform: scale(1.01);
 }
 
 .hero-card h4 {
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+.hero-card .form-control {
+  height: 45px;
 }
 
 /* FORM FIELDS */
@@ -840,7 +844,7 @@ a {
 }
 
 /* Corrections for Header */
-/* 🔥 Header login layout fix */
+/* Header login layout fix */
 .header-login {
   display: flex;
   align-items: center;
@@ -857,12 +861,19 @@ a {
   height: 28px;
   border-radius: 8px;
   font-size: 0.90rem;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
+/*  background: rgba(255, 255, 255, 0.9); */ /*interferes with '!' icon on is-invalid*/
+background-color: rgba(255, 255, 255, 0.9);  
+border: 1px solid #cbd5e1; 
 }
 
 .header-login .form-control:focus {
   box-shadow: 0 0 0 3px rgba(78, 160, 243, 0.938);
+}
+
+.header-login input.form-control.is-invalid {
+    background-color: #f1dadadf;
+    
+    box-shadow: none;
 }
 
 /* Button alignment */
