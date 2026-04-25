@@ -45,9 +45,9 @@
           <label for="post-title" class="text-muted mb-1">
             <small>Title</small>
           </label>
-          <input autofocus name="title" id="post-title" class="form-control form-control-lg form-control-title" type="text" placeholder="" autocomplete="off" />
-          <div class="alert alert-danger small liveValidateMessage liveValidateMessage--visible">
-           please enter valid title
+          <input autofocus name="title" id="post-title" class="form-control form-control-lg form-control-title is-invalid" type="text" placeholder="" autocomplete="off" />
+          <div class="invalid-feedback">
+            Please enter valid title
           </div>
         </div>
 
@@ -55,7 +55,10 @@
           <label for="post-body" class="text-muted mb-1 d-block">
             <small>Body Content</small>
           </label>
-          <textarea name="body" id="post-body" class="body-content tall-textarea form-control" type="text"></textarea>
+          <textarea name="body" id="post-body" class="body-content tall-textarea form-control is-invalid" type="text"></textarea>
+          <div class="invalid-feedback">
+            Please enter body content
+          </div>
         </div>
 
         <button class="btn btn-success">Save New Post</button>
