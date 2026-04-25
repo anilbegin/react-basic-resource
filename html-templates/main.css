@@ -73,22 +73,23 @@ body {
   margin-bottom: 1.75rem;
 }
 
-.input-dark::-webkit-input-placeholder {
-  color: #888;
-}
-.input-dark::-moz-placeholder {
-  color: #888;
-}
-.input-dark:-ms-input-placeholder {
-  color: #888;
-}
-.input-dark:-moz-placeholder {
-  color: #888;
-}
+@media (max-width: 768px) {
+  .header-login {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
 
-@media (min-width: 768px) {
-  .input-dark {
-    width: auto;
+  .header-login .form-control {
+    width: 100%;
+  }
+
+  .header-login input.form-control {
+    width: 100%;
+  }
+
+  .header-login .btn {
+    width: 100%;
   }
 }
 
@@ -639,26 +640,6 @@ body {
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
-/* Dark inputs (header login) */
-.input-dark {
-  background-color: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #0f172a;
-  border-radius: 8px;
-  padding: 6px 10px;
-  font-size: 0.9rem;
-}
-
-.input-dark::placeholder {
-  color: #64748b;
-}
-
-.input-dark:focus {
-  background-color: #ffffff;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
 /* Buttons */
 .btn {
   border-radius: 10px;
@@ -752,6 +733,22 @@ a {
 
 .modern-card p {
   color: #64748b;
+}
+
+.modern-card.no-hover:hover {
+  transform: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.content-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #d9e0ea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: none; /* no hover animation */
 }
 
 /*CSS for the new Hero section*/
@@ -942,6 +939,14 @@ border: 1px solid #cbd5e1;
 
 /*list-group-item highlight when mouse hover */
 /* Custom Hover Effect for Profile and Feed Lists */
+/* creating separation between each list Item */
+/*
+.list-group-item {
+  border-radius: 10px; 
+  margin-bottom: 6px;
+}
+*/
+
 .list-group-item-action {
   transition: all 0.3s ease;
   border-left: 4px solid transparent; /* Prepare a hidden border */
