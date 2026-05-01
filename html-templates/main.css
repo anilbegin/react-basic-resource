@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth; /* clicking on create account CTA section scrolls up smoothly */
+  overflow-y: scroll;
 }
 
 body {
@@ -626,6 +627,11 @@ body {
   letter-spacing: 0.5px;
 }
 
+.header-bar .guest .btn {
+  margin-top: -3px;  
+  margin-bottom: -3px;
+}
+
 /* Inputs (modern feel) */
 .form-control {
   border-radius: 10px;
@@ -672,7 +678,7 @@ body {
   color: #64748b;
 }
 
-/* ✨ Form Section Card Feel */
+/* Form Section Card Feel */
 form {
   background: #ffffff;
   padding: 25px;
@@ -686,7 +692,7 @@ label small {
   color: #475569;
 }
 
-/* ✨ Footer */
+/* Footer */
 footer {
   background-color: #ffffff;
   border-top: 1px solid #e2e8f0;
@@ -707,7 +713,7 @@ a {
   transition: color 0.2s ease;
 }
 
-/* ✨ Subtle spacing improvement */
+/* Subtle spacing improvement */
 .container {
   max-width: 1140px;
 }
@@ -824,7 +830,7 @@ a {
 /* FORM FIELDS */
 
 
-/* 📱 RESPONSIVE */
+/* RESPONSIVE */
 @media (max-width: 992px) {
   .hero-inner {
     flex-direction: column;
